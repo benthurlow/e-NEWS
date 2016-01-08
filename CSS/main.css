@@ -7,79 +7,172 @@ table {
 	width: 100%;
 	height: 100%;
 
+	table-layout: fixed;
+
 	border-collapse: collapse;
-	border: 1px solid black;
 }
 
 tr {
-	border: 1px solid black;
+	margin: 0;
+	padding: 0;
 }
 
 td {
-	border: 1px solid black;
+	margin: 0;
+	padding: 0;
 }
 
-.category {
+div.category { /* holds an entire category i.e. temperature */
 	width: 100%;
-	min-width: 450px;
-
 	padding-top: 10px;
-
-	overflow: hidden;
 	position: relative;
-	clear: both;
-	white-space: nowrap;
 }
 
-.title {
-	width: 11%;
-	min-width: 90px;
+td.titleContainer { /* container for lhs - doesnt always contain both title + values */
+	width: 210px;
+	border-top: black solid 1px;
+}
 
+td.keyContainer { /* container for the key component */
+	width: 210px;
+}
+
+.headerContainer { /* container for name, d.o.b, admission date */
+	border-top: black solid 2px;
+	border-right: black solid 2px;
+	border-left: black solid 2px;
+}
+
+td.title { /* title for the category */
+	width: 118px;
 	text-align: center;
 	font-weight: bold;
 
-	border: 1px solid black;
-
-	display: inline-block;
+	border-top: black solid 1px;
+	border-bottom: black solid 2px;
+	border-left: black solid 2px;
+	border-right: black solid 1px;
 }
 
-.values {
-	width: 7%;
-	min-width: 55px;
-	padding: 0;
+td.bigTitle { /* title with no values */
+	font-weight: bold;
+	text-align: center;
 
-	display: inline-block;
+	border-top: black solid 1px;
+	border-bottom: black solid 2px;
+	border-left: black solid 2px;
 }
 
-.valuestdLeft {
+td.smallTitleLeft { /* title with no values - on the Left of form */
+	font-weight: bold;
 	text-align: right;
+	font-size: 10pt;
+
 	padding-right: 2px;
+	border-bottom: black solid 1px;
 }
 
-.valuestdRight {
+td.smallTitleRight { /* title with no values - on the right of form */
+	font-weight: bold;
 	text-align: left;
-	padding-left:2px;
+	font-size: 10pt;
+
+	padding-left: 2px;
+	border-top: black solid 1px;
+	border-right: black solid 2px;
 }
 
-.cells {
-	width: 35%;
+td.verticalTitle { /* title with vertical text on left of form */
+	border-top: black solid 1px;
+	border-left: black solid 2px;
+	border-bottom: black solid 2px;
+
+	width: 25%;
+	padding-top: 20px;
+	text-align: center;
+
+	font-size: 10pt
+}
+
+td.values { /* all of the values */
+	width: 88px;
+
+	border-top: black solid 1px;
+	border-bottom: black solid 2px;
+}
+
+td.valuestdLeft { /* values for left side of form */
+	font-size: 9pt;
+	padding-right: 2px;
+	text-align: right;
+
+	border-bottom: solid black 1px;
+	border-left: solid black 1px;
+	border-collapse: collapse;
+}
+
+td.valuestdRight { /* values for right side of form */
+	font-size: 9pt;
+	padding-left: 2px;
+	text-align: left;
+
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+	border-right: solid black 2px;
+	border-collapse: collapse;
+}
+
+td.cells { /* all of the cells */
+	padding: 0;
+	display: inline-block;
+	border: solid black 1px;
+	border-bottom: solid black 2px;
+}
+
+td.cell { /* individual cells in grid */
+	border: solid black 1px;
+}
+
+td.severity { /* contains all severities */
+	width: 30px;
 	padding: 0;
 
 	display: inline-block;
 }
 
-.severity {
-	width: 3%;
-	padding: 0;
-
-	border: 1px solid white;
-	border-right: 1px solid black;
-
-	display: inline-block;
-}
-
-.severitytd {
+td.severitytd { /* contains individual severities */
 	text-align: center;
 	font-weight: bold;
 	border: 3px solid white;
+}
+
+td.headerTitle {
+	font-size: 10pt;
+	padding-left: 3px;
+	text-align: left;
+	font-weight: bold;
+
+	border-left: solid black 1px;
+}
+
+td.keys {
+	margin: 10px;
+}
+
+td.key {
+	border: solid black 1px;
+	height: 80%;
+	width: 10px;
+}
+
+.leftVerticalText { /* rotate text to read bottom to top. */
+	-webkit-transform: rotate(270deg); /* only works for chrome - update with others later */
+	text-align: center;
+	font-size: 10pt;
+}
+
+#title {
+	font-weight: bold;
+	font-size: 18pt;
+	text-align: center;
 }
