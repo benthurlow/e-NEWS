@@ -1,0 +1,101 @@
+* {
+	font-size: 100%;
+	font-family: "Arial";
+}
+
+#title {
+	font-weight: bold;
+	font-size: 18pt;
+	text-align: center;
+	padding: 20px;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+
+	table-layout: fixed;
+	
+	border-collapse: collapse;
+}
+
+td {
+	
+}
+
+td.margin {
+	width: 10%;
+}
+
+td.dataForm {
+	height: 100%;
+	width: 80%;
+}
+
+form {
+	margin: 0 auto;
+	width: 425px;
+}
+
+label{
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+
+input.dataEntry {
+	border-radius: 8px;
+	text-align: right;
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 40%;
+}
+
+input.dataEntryHalfLeft {
+	border-radius: 8px;
+	text-align: center;
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-right: 2px;
+	width: 19%;
+}
+
+input.dataEntryHalfRight {
+	border-radius: 8px;
+	text-align: center;
+	padding: 10px;
+	margin-left: 2px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 19%;
+}
+
+select.dataEntry {
+	border-radius: 8px;
+	padding: 10px;
+	margin-left: 6px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 55%;
+}
+
+div.buttons {
+	border-top: solid blue 1px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+button.submitButton {
+	border-radius: 8px;
+	padding: 10px;
+}
+
+input.cancelButton {
+	border-radius: 8px;
+	padding: 10px;
+}
