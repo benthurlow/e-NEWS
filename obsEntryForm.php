@@ -17,7 +17,7 @@
 					Enter Obs
 				</div>
 				<form action="addObsData.php"> <!-- whichever file recieves the data should go here. -->
-					<div><label for="bloodPressure">Blood Pressure: </label><input class="dataEntryHalfLeft" type="text" name="bloodPressure"/><b>/</b><input class="dataEntryHalfRight" type="text" name="bloodPressure"/> mm/Hg</div>
+					<div><label for="bloodPressure">Blood Pressure: </label><input class="dataEntryHalfLeft" type="text" name="bloodPressureSystolic"/><b>/</b><input class="dataEntryHalfRight" type="text" name="bloodPressureDiastolic"/> mm/Hg</div>
 					<div><label for="spO2">Sp0<sub>2</sub>: </label><input class="dataEntry" type="text" name="spO2"/> %</div>
 					<div><label for="o2Flow">Oxygen Flow Rate: </label><input class="dataEntry" type="text" name="o2Flow"/> L</div>
 					<div><label for="o2Percent">Oxygen %: </label><input class="dataEntry" type="text" name="o2Percent"/> </div>
